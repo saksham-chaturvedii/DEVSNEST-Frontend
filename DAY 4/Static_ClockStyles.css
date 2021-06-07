@@ -1,0 +1,73 @@
+.display{
+    top: 30%;
+    left: 41%;
+    position: absolute;
+}
+.border_outline{
+    border-radius: 50%; 
+    border: 2px solid rgb(87, 87, 87);
+    width: 266px;
+    height: 266px;
+}
+.border_inline{
+    border-radius: 50%; 
+    border: 2px solid rgb(87, 87, 87);
+    width: 248px;
+    height: 248px;
+}
+#clock_circle{
+    border: 8px solid lavender;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 1px 1px 50px 9px rgba(0, 0, 0, 0.562);  
+}
+
+.hour{
+    top: 82px;
+    height: 44px;
+    width: 3px;
+    left: 49.4%;
+    background: rgb(214, 16, 16); 
+    position: absolute;   
+    box-shadow: 2px 2px 28px 2px black
+}
+.min{
+    top: 54px;
+    height: 90px;
+    width: 5px;
+    box-shadow: 2px 2px 28px 4px black;
+    left: 61%;
+    background: black; 
+    position: absolute;   
+    transform: rotate(45deg);
+}
+.sec{
+    top: 73px;
+    height: 100px;
+    width: 4px;
+    left: 68%;
+    background: rgb(191, 187, 196); 
+    box-shadow: 2px 2px 28px 4px black;
+    opacity: 0.3;
+    position: absolute;   
+    transform: rotate(82deg);
+
+}
+.dot{
+    border: 8px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 46%;
+    right: 47%;
+}
+.img_format{
+    filter: blur(4.5px);
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: 9.5px;
+    height: 253px;
+    width: 253px;
+    opacity:0.7;
+}
