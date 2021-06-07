@@ -5,3 +5,4 @@
 
 
 # Animated Clock:
+![Animated_Clock](https://user-images.githubusercontent.com/81289215/121099750-0abe2000-c816-11eb-9589-0fd5d68c0417.gif)
