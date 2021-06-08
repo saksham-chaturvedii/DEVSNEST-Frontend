@@ -4,6 +4,6 @@ This repository contains the FrontEnd Web Development 🎨 projects; currently, 
 
 ---
 
-The projects are maintained in a "**Day-Wise**" manner, according to the Take-Home-Assignments given post each session. Hence, level the level of projects would also be ascending- Beginner to Advance Level. \
+The projects are maintained in a "**Day-Wise**" manner, according to the Take-Home-Assignments given post each session. Hence, the level of the projects would also be ascending- Beginner to Advance Level.
 
-You can take an idea from here to start your FrontEnd journey! 🙋🏽‍♂️
+You can take an idea for the projects to practice from here & start your FrontEnd journey as well! 🙋🏽‍♂️
