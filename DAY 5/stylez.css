@@ -1,0 +1,95 @@
+.welcome
+{
+    color: black;
+    position: absolute;
+    top: 13%;
+    left: 39.8%;
+    right: 38%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+.Calc_border{
+    border: 4px solid whitesmoke;
+    border-radius: 35px;
+    background-color: rgb(0, 0, 0);
+    padding: 2px 23px;
+    position: absolute;
+    top: 20%;
+    height: 470px;
+    right: 40%;
+    left: 40%;
+}
+.input_box{
+    /* font-family: 'Helvetica'; */
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: absolute;
+    top: 5%;
+    bottom: 74%;
+    right: 4.5%;
+    left: 4.5%;
+}
+.AC{
+    font-family: 'Helvetica';
+    color: black;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: gray;
+    font-size: 22px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.plus_minus{
+    font-family: 'Helvetica';
+    color: black;
+    border-radius: 50%;
+    padding: 11px 20px;
+    background-color: gray;
+    font-size: 24px;
+    position: absolute;
+    top: 30%;
+    left: 29.5%;
+}
+.percentage{
+    font-family: 'Helvetica';
+    color: black;
+    border-radius: 50%;
+    padding: 10.5px 16px;
+    background-color: gray;
+    font-size: 24px;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+
+}
+.div{
+    font-family: 'Helvetica';
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 7.5px 18px;
+    background-color: rgb(255, 174, 0);
+    font-size: 29px;
+    position: absolute;
+    top: 30%;
+    left: 76%;
+}
+.symbol{
+    font-family: 'Helvetica';
+    color: white;
+    border-radius: 50%;
+    padding: 12px 19px;
+    background-color: rgb(255, 174, 0);
+    font-size: 24px;
+
+}
+.nums{
+    font-family: 'Helvetica';
+    color: white;
+    border-radius: 50%;
+    padding: 12px 21px;
+    background-color: rgba(43, 43, 43, 0.911);
+    font-size: 24px;
+}
