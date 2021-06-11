@@ -9,7 +9,7 @@
     font-size: 24px;
 }
 .Calc_border{
-    border: 4px solid whitesmoke;
+    /* border: 4px solid whitesmoke; */
     border-radius: 35px;
     background-color: rgb(0, 0, 0);
     padding: 2px 23px;
@@ -18,33 +18,47 @@
     height: 470px;
     right: 40%;
     left: 40%;
+    box-shadow: 1px 2px 12px 2px black;
+
+}
+*:focus {
+    outline: none;
 }
 .input_box{
-    /* font-family: 'Helvetica'; */
-    border: 2px solid whitesmoke;
+    font-family: 'Helvetica';
+    border: 2px solid black;
     border-radius: 15px;
+    color: white;
+    width: 248px;
+    text-align: right;
+    font-size: 40px;
     background-color: rgb(0, 0, 0);
     opacity: 0.7;
     position: absolute;
     top: 5%;
     bottom: 74%;
     right: 4.5%;
-    left: 4.5%;
+    left: 6.5%;
 }
+
 .AC{
     font-family: 'Helvetica';
     color: black;
-    border-radius: 50%;
+    border: 0.1px solid black;
+    border-radius: 25px;
+    text-align: left;
     padding: 12px;
+    width: 56.95px;
     background-color: gray;
     font-size: 22px;
     position: absolute;
     top: 30%;
     left: 5%;
 }
-.plus_minus{
+.backspace{
     font-family: 'Helvetica';
     color: black;
+    border: 0.1px solid black;
     border-radius: 50%;
     padding: 11px 20px;
     background-color: gray;
@@ -56,6 +70,7 @@
 .percentage{
     font-family: 'Helvetica';
     color: black;
+    border: 0.1px solid black;
     border-radius: 50%;
     padding: 10.5px 16px;
     background-color: gray;
@@ -68,7 +83,9 @@
 .div{
     font-family: 'Helvetica';
     color: whitesmoke;
+    border: 0.1px solid black;
     border-radius: 50%;
+    width: 52px;
     padding: 7.5px 18px;
     background-color: rgb(255, 174, 0);
     font-size: 29px;
@@ -79,15 +96,17 @@
 .symbol{
     font-family: 'Helvetica';
     color: white;
+    border: 0.1px solid black;
     border-radius: 50%;
-    padding: 12px 19px;
+    padding: 11px 19px;
     background-color: rgb(255, 174, 0);
     font-size: 24px;
-
+    width: 52px;
 }
 .nums{
     font-family: 'Helvetica';
     color: white;
+    border: 0.1px solid black;
     border-radius: 50%;
     padding: 12px 21px;
     background-color: rgba(43, 43, 43, 0.911);
