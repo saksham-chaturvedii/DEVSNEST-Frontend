@@ -31,8 +31,7 @@
     background: rgb(214, 16, 16); 
     position: absolute;   
     box-shadow: 2px 2px 28px 2px black;
-    /* animation: tick 3s infinite linear; */
-    -webkit-animation: tick 43200s infinite linear;
+    -webkit-animation: hour_tick 300s infinite linear;
 
 }
 .min{
@@ -43,9 +42,8 @@
     left: 49%;
     background: black; 
     position: absolute;   
-    /* transform: rotate(45deg); */
-    /* animation: tick 3s infinite linear ; */
-    -webkit-animation: tick 3600s infinite linear;
+    transform: rotate(45deg);
+    -webkit-animation: min_tick 25s infinite linear;
 
 }
 /* element */
@@ -58,29 +56,30 @@
     box-shadow: 2px 2px 28px 4px black;
     opacity: 0.3;
     position: absolute;   
-    /* transform: rotate(82deg); */
-    /* animation: tick 3s infinite linear; */
-    -webkit-animation: tick 60s infinite linear;
+    transform: rotate(82deg);
+    -webkit-animation: sec_tick 5s infinite linear;
     -webkit-transform-origin: 30% 70%;
 
 }
 .hour, .min
 {
-    /* transform-origin: 20% 40%; */
     -webkit-transform-origin: bottom;
 
 }
-/* animation */
 
-/* Uncomment if using any browser except Chrome, Opera & Safari 
-@keyframes tick { 
-    to {
-      transform: rotate(360deg);
-    }
-  }   */
-@-webkit-keyframes tick {
+@-webkit-keyframes hour_tick {
     to {
       -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes min_tick {
+    to {
+      -webkit-transform: rotate(405deg);
+    }
+}
+@-webkit-keyframes sec_tick {
+    to {
+      -webkit-transform: rotate(442deg);
     }
 }
 .dot{
@@ -92,7 +91,7 @@
     /* opacity: 0.1; */
 }
 .img_format{
-    filter: blur(4.5px);
+    filter: blur(3.8px);
     border-radius: 50%;
     position: absolute;
     top: 11px;
