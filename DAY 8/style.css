@@ -1,0 +1,30 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbox{
+    height: 418px;
+    width: 462px;
+    background: tomato;
+    border: 1px solid tomato;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 2px 12px 2px black;
+}   
+
+.box{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid tomato;
+    cursor: pointer;
+}
+.white
+{
+    background: white;
+}
