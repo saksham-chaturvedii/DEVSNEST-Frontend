@@ -26,6 +26,4 @@ for(item of buttons){
 
     })
 }
-// function erase(){
 
-// }
