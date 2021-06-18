@@ -9,7 +9,7 @@ for(let i=1; i<400; i++)
 
 let click_boxes = document.querySelectorAll(".box");
 click_boxes.forEach((box) => {
-    box.addEventListener("click", (e) => {
-        e.target.classList.toggle("white");
+    box.addEventListener("click", () => {
+        box.classList.toggle("white");
     });
 });
