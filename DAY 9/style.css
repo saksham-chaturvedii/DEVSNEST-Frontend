@@ -17,6 +17,7 @@ body{
     height: 22px;
     width: 40rem;
     border-radius: 45% 45% 4% 4%;
+    box-shadow: 0px 10px 14px white;
 }
 .container_box
 {
@@ -34,17 +35,20 @@ body{
 .bookedSeats{
     font-family: monospace;
     color: black;
+    font-size: 22px;
     position: fixed;
-    left: 60%;
-    top: 40%;
+    transform: translate(-50%, -50%);
+    left: 83%;
+    top: 12%;
 }
-
 .remainingSeats{
     font-family: monospace;
     color: black;
+    font-size: 22px;
     position: fixed;
-    left: 60%;
-    top: 45%;
+    transform: translate(-50%, -50%);
+    left: 83%;
+    top: 16%;
 }
 .seat_box
 {
@@ -57,5 +61,5 @@ body{
 }
 .seat_booked
 {
-    background: rgb(0, 0, 0);
+    background: rgb(97, 21, 21);
 }
