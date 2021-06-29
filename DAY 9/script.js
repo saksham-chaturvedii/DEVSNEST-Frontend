@@ -15,7 +15,6 @@ for(let i=0; i<36; i++)
 const seat_box = document.querySelectorAll('.seat_box');
 seat_box.forEach((box) => {
     box.addEventListener('click', (e)=>{
-        console.log(e.target);
         if(e.target.classList.length == 1)
         {
             bookedSeatsCount+=1;
