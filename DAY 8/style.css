@@ -1,11 +1,28 @@
-body
+body 
 {
     margin: 0%;
     padding: 0%;
-    height: 100vh;
+    overflow: hidden;
+    
+}
+.heading{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.boxes
+{   
+
+    height: 64vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .mainbox{
     height: 418px;
