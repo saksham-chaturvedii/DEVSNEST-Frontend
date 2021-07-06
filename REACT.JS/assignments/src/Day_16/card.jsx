@@ -1,17 +1,29 @@
 import "./style.css";
+import Chess from "./chessBlack";
 
 const Meme =()=>{
     return(
-        <div className="box">
-            <div className="card">
+        <div >
+            
+            <h2>All Work done using React JS</h2>
+            
+            <div className="outer_container">
                 <div className="image"></div>
-                <div>How relatable xD</div>
+                <div className="text">How relatable xD </div>
             </div>
-            <div className="card">
-                <div className="image"></div>
-                <div>How relatable xD</div>
+                
+            <div className = "BWcontainer ">
+                <div className="BWcontainer-inner_border">
+                <Chess />
+                <Chess />
+                <Chess />
+                <Chess />
+                </div>
             </div>
+            <div className="text">Chess Board</div>
         </div>
+        
+
         
     );
 
