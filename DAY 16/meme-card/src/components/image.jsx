@@ -1,8 +1,9 @@
 import CardImg from "./CardImg.jpg";
-const bg = ()=>{
+var bg = ()=>{
     return (
-        
-        <img src={CardImg} alt="" />
+        <div>
+            <img src={CardImg} alt="" />
+        </div>     
     );
 }
 export default bg;
