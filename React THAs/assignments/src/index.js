@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from "./components/card";
-import "./style.css";
+import App from "./DAY 16/App";
 
 ReactDOM.render
 (
-    <Card />, 
+    <App />, 
     document.getElementById("root")    
 );

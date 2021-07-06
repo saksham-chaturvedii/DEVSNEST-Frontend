@@ -1,0 +1,32 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem;
+}
+.image
+{
+    background-image: url('./images/meme.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:50vh;
+    width: 30vw;
+}
