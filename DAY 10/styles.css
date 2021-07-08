@@ -2,7 +2,7 @@
     padding: 0;    
     margin: 0;
     box-sizing: border-box;   
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .bg
@@ -18,7 +18,7 @@
     width: 100%;
     position:absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(59, 59, 59, 0.7);
+    background-color: rgba(5, 5, 5, 0.808);
 }
 .title
 {
@@ -48,22 +48,22 @@
     transform: translateX(-50%);
     top: 18%;
     left: 50%;
-    width: 81vw;
+    width: 77vw;
     height: 81vh;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     z-index: 1;
 }
 .image-card
 {
-    height: 17rem;
-    width: 15rem;
-    margin: 0rem 2rem;
+    height: 15rem;
+    width: 13rem;
+    margin: 1rem 1rem;
     transition: all 0.2s ease;
     border-radius: 2%;
+    box-shadow: 1px 1px 8px 1px black;
 }
 .image-card:hover
 {
