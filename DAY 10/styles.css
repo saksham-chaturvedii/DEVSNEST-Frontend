@@ -56,7 +56,6 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 1;
-    border: 1px solid purple;
 }
 .image-card
 {
