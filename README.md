@@ -1,6 +1,6 @@
 # Description
 
-This repository contains the FrontEnd Web Development 🎨 projects; currently, they are related to learnings from the Devsnest FrontEnd Course.
+This repository contains FrontEnd Web Development 🎨 projects; currently, they are related to learnings from the Devsnest FrontEnd Course.
 
 ---
 
