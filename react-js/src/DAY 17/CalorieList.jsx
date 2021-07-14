@@ -2,7 +2,7 @@ import "./style.css";
 const CalorieList = (props)=>{
     return(
                 <div className="list">
-                    {props.food}: {props.calories}
+                    {props.food}: {props.calories} calories
                 </div>
     )
 }
