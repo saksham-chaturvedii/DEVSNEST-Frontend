@@ -1,14 +1,10 @@
-
-const CalorieList = ()=>{
+import "./style.css";
+const CalorieList = (props)=>{
     return(
         <div>
-            <h2>CALORIE LIST</h2>
-            {/* <div className="container"> */}
                 <div className="list">
-                    {/* food */}
-                    {/* Consumption: x cals  */}
+                    {props.food}: {props.calories}
                 </div>
-            {/* </div> */}
         </div>
     )
 }
