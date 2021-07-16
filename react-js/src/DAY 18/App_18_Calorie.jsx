@@ -23,8 +23,8 @@ const App= (props)=>{
                 <CalorieList food="French fries" calories="312"/>
                 <CalorieList food="Noodles" calories="138"/> */}
           {
-            calorie_arr.map(item =>(
-              <CalorieList food = {item.food} calories={item.calories}/>
+            calorie_arr.map((item, index) =>(
+              <CalorieList key ={index} food = {item.food} calories={item.calories}/>
             ))
           }
         </div>

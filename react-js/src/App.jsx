@@ -1,7 +1,7 @@
 // import Day16 from "./DAY 16/App_16";
 // import Day17 from "./DAY 17/App_17";
 import Day18CalorieApp from "./DAY 18/App_18_Calorie";
-// import Day18_ChessboardApp from "./DAY 18/App_18_Chess";
+// import Day18ChessboardApp from "./DAY 18/App_18_Chess";
     
     const App = ()=>{
         return(
@@ -9,7 +9,7 @@ import Day18CalorieApp from "./DAY 18/App_18_Calorie";
                 {/* <Day16 /> */}
                 {/* <Day17 /> */}
                 <Day18CalorieApp />
-                {/* <Day18_ChessboardApp /> */}
+                {/* <Day18ChessboardApp /> */}
             </div>
         );
     }

@@ -3,8 +3,8 @@
 
 ## -> Re-usable component:
 ```{
-  calorie_arr.map((item) => (
-    <CalorieList food={item.food} calories={item.calories} />
+  calorie_arr.map((item, index) => (
+    <CalorieList key = {index} food={item.food} calories={item.calories} />
   ));
 }
 ```
