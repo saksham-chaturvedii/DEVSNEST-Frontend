@@ -28,3 +28,28 @@ body
     border-radius: 2%;
     box-shadow: 1px 1px 5px 0.2px black;
 }
+
+/* Chess */
+.center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.block
+{
+    height: 3rem;
+    width: 3rem;
+    box-sizing: border-box;
+}
+.row_container
+{
+    display: flex;
+}
+.col_container
+{
+    display: inline-block;
+    border: 0.5rem solid black;
+}
