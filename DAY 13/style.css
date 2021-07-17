@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+
+    background-image: url('https://i.pinimg.com/originals/c2/5c/a8/c25ca8a50647885986e62037962fb6d6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.heading
+{
+    margin-top: 5rem;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;  
+    border-radius: 10%;
+    padding: 12px;
+    box-shadow: 1px 1px 14px 1px black;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+
+}
+.meme
+{
+    height: 40vh;
+}
+.memenbutton
+{
+        display: flex;
+        flex-direction: column;
+    align-self: center;
+    margin: 4rem 0rem;
+}
+img
+{
+    margin-bottom: 2rem;
+}
+button{
+    margin: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.541);
+        box-shadow: 1px 1px 6px 1px black;
+    color: white;
+    font-size: large;
+    border-radius: 1%;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
