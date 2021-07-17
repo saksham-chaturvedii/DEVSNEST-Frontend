@@ -16,7 +16,7 @@ body{
     position: relative;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: 60%;
     max-height: 80vh;
     min-height: 50vh;
     transform: translate(-50%, -50%);
@@ -32,18 +32,17 @@ body{
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding: 2px;
+    padding: 1rem 0rem;
     margin: 1rem 0rem;
 }
 .todolist
 {
     overflow-y: scroll;
     height: 50vh;
-    line-height: 1.7rem;
 }
 button
 {
-    padding: 2px 4px;
+    padding: 4px;
     background-color: rgb(255, 209, 209);
     border-radius: 8%;
 }
@@ -51,3 +50,13 @@ button:hover
 {
     cursor: pointer;
 }
+.entry
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0.75rem 0rem;
+    padding-right: 2rem;
+}
+

@@ -1,6 +1,7 @@
 const input = document.querySelector("input");
 const AddButton = document.querySelector("button");
 const todolist = document.querySelector(".todolist");
+const done = document.querySelector(".done")
 
 /* Better Way to load the to-do entries*/
 var entries = [];
@@ -13,9 +14,10 @@ AddButton.addEventListener("click", () => {
 function addEntries() {
   entries.push({ title: input.value.trim(), done: "false" });
   const newEntry = document.createElement("div");
-  const done = document.createElement("button");
-  newEntry.innerHTML = "→ " + entries[entries.length - 1].title;
-  todolist.appendChild(newEntry, done);
+  newEntry.className = "entry";
+  newEntry.innerHTML = '→ ' + entries[entries.length - 1].title+
+    '<button class="done_button">DONE</button>';
+  todolist.appendChild(newEntry);
   input.value = "";
   localStorage.setItem("todo", JSON.stringify(entries));
 }
@@ -27,10 +29,19 @@ window.onload = () => {
   JSON.parse(localStorageData).forEach(function (item) {
     entries.push(item);
     const newEntry = document.createElement("div");
-    newEntry.innerHTML = "→ " + item.title;
+    newEntry.className = "entry";
+    newEntry.innerHTML =
+      "→ " +
+      entries[entries.length - 1].title +
+      '<button class="done_button">DONE</button>';
     todolist.appendChild(newEntry);
   });
 };
+
+// done.addEventListener('click',(e)=>{
+//   entries[e].pop
+// })
+
 
 /* Naive Way
 button.addEventListener('click', ()=>{
