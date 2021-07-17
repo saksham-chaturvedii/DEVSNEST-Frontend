@@ -1,4 +1,4 @@
-## REACT - JS THAs <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="drawing" width="28px"/>
+## REACT - JS THAs <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"  width="28px"/>
 
 
 #### FOLLOW THE LINKS TO THE RESPECTIVE ASSIGNMENT'S FOLDER:
