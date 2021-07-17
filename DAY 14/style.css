@@ -1,0 +1,26 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: black;
+    height: 999vh;
+}
+
+.title
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-weight: 100;
+    letter-spacing: 1rem;
+    line-height: 2rem;
+    cursor:default;
+}
+::-webkit-scrollbar {
+    display: none;
+}
