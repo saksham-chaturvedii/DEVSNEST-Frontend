@@ -13,8 +13,9 @@ AddButton.addEventListener("click", () => {
 function addEntries() {
   entries.push({ title: input.value.trim(), done: "false" });
   const newEntry = document.createElement("div");
-  newEntry.innerHTML = entries[entries.length - 1].title;
-  todolist.appendChild(newEntry);
+  const done = document.createElement("button");
+  newEntry.innerHTML = "→ " + entries[entries.length - 1].title;
+  todolist.appendChild(newEntry, done);
   input.value = "";
   localStorage.setItem("todo", JSON.stringify(entries));
 }
@@ -26,21 +27,10 @@ window.onload = () => {
   JSON.parse(localStorageData).forEach(function (item) {
     entries.push(item);
     const newEntry = document.createElement("div");
-    newEntry.innerHTML = item.title;
+    newEntry.innerHTML = "→ " + item.title;
     todolist.appendChild(newEntry);
   });
 };
-// window.onload = () => {
-//   if (entries) {
-//     var entriez = localStorage.getItem("todo");
-//     entriez.push(localStorage.getItem("todo"));
-//     JSON.parse(entriez).forEach(function (item) {
-//       const newEntry = document.createElement("div");
-//       newEntry.innerHTML = item.title;
-//       todolist.appendChild(newEntry);
-//     });
-//   }
-// };
 
 /* Naive Way
 button.addEventListener('click', ()=>{
