@@ -21,6 +21,6 @@ body{
     cursor:default;
     font-size: 18px;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
