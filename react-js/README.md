@@ -5,6 +5,6 @@
 [DAY 15](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2015)\
 [DAY 16](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2016)\
 [DAY 17](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2017)\
-[DAY 18](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2018)
+[DAY 18](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2018)\
 [DAY 19](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2019)
 <!--[DAY 20](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2020)\ -->
