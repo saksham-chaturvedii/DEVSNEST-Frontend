@@ -32,4 +32,5 @@ body
 {
     position: relative;
     left: 80%;
+    cursor: pointer;
 }
