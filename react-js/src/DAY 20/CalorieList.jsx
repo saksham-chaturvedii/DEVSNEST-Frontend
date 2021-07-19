@@ -6,6 +6,10 @@ import "./style.css";
 //     console.log(1)
 // };
 // deleteEntry(props)
+//function redirect not working, click not working
+
+//what is element. how can we print it
+//why are we using element.id
 
 const CalorieList = (props) => {
   return (
@@ -16,7 +20,6 @@ const CalorieList = (props) => {
       </div>
           <button id="del" onClick={(e) => {
             const newFoodList = props.calorie_arr2.filter((element) => element.id !== props.key2);
-            // console.log(props.calorie_arr2, props.key2);
             props.setState(newFoodList);
           }}> DELETE </button>
     </div>
