@@ -3,15 +3,14 @@
 // import Day18CalorieApp from "./DAY 18/App_18_Calorie";
 // import Day18ChessboardApp from "./DAY 18/App_18_Chess";
 // For Day 19, refer to index.js directly.    
+import Day20CalorieApp from "./DAY 20/App_20";
+
     const App = ()=>{
         return (
           <div>
             {/* <Day16 /> */}
-
             {/* <Day17 /> */}
-
             {/* <Day18CalorieApp /> */}
-
             {/* <div className="center">
               <Day18ChessboardApp />
               <h2>
@@ -19,6 +18,7 @@
                 statements, reusuable components)
               </h2>
             </div> */}
+            <Day20CalorieApp/>
           </div>
         );
     }
