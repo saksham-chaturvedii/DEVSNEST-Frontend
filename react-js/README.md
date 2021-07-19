@@ -2,6 +2,7 @@
 
 
 #### FOLLOW THE LINKS TO REDIRECT TO THE RESPECTIVE ASSIGNMENT'S FOLDER:
+##### All the assignments consist of a ```Readme.md``` file as well, which show details about work done in the project.
 [DAY 15](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2015)\
 [DAY 16](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2016)\
 [DAY 17](https://github.com/saksshham/Frontend---DEVSNEST/tree/main/react-js/src/DAY%2017)\
