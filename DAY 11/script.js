@@ -2,16 +2,28 @@ const questionElement = document.querySelector(".question");
 const answer_container = document.querySelector(".answer-container");
 var shuffledQuestions, QuestionIndex, score;
 var click = false;
+var i = 0;
+var txt = "QUIZ APP"+" ✔";
+var speed = 100;
 
 window.onload = () => {
-  shuffledQuestions = questions.sort(() => Math.random());
+  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   QuestionIndex = 0;
   score = 0;
   showQuestion(shuffledQuestions[QuestionIndex]);
+  heading_animation();
+};
+
+const heading_animation = () => {
+  if (i < txt.length) {
+    document.getElementById("quiz-heading").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(heading_animation, speed);
+  }
 };
 
 function showQuestion(q) {
-  questionElement.innerHTML = "Q: "+ q.question;
+  questionElement.innerHTML = "Q: " + q.question;
   q.answer.forEach((answer) => {
     const buttonElement = document.createElement("button");
     buttonElement.setAttribute("class", "answer-button");
@@ -28,9 +40,8 @@ function showQuestion(q) {
 
 const checkAnswer = (e) => {
   const selectedButton = e.target;
-  if (selectedButton.dataset.correct) 
-  {
-    score += 1;    
+  if (selectedButton.dataset.correct) {
+    score += 1;
   }
   if (shuffledQuestions.length > QuestionIndex + 1) {
     while (answer_container.firstChild) {
@@ -38,15 +49,14 @@ const checkAnswer = (e) => {
     }
     QuestionIndex += 1;
     showQuestion(shuffledQuestions[QuestionIndex]);
-  }
-  else {
+  } else {
     alert("Quiz Over. Your score: " + score + "/6");
-  } 
+  }
 };
 
-questions = [
+const questions = [
   {
-    question: "FMGB, HMIB, JMKB, _________, NMOA",
+    question: "FMGB, HMIB, JMKB, ____, NMOA",
     answer: [
       {
         text: "LMMB",
@@ -68,7 +78,7 @@ questions = [
   },
   {
     question:
-      "Look at this series: 20, 15, 20, 17, 20, ___. What number should come next?",
+      "Look at this series: 20, 15, 20, 17, 20, __. What number should come next?",
     answer: [
       {
         text: "23",
@@ -83,7 +93,7 @@ questions = [
         correct: true,
       },
       {
-        text: "-1",
+        text: "18",
         correct: false,
       },
     ],
