@@ -1,15 +1,16 @@
 const questionElement = document.querySelector(".question");
 const answer_container = document.querySelector(".answer-container");
+const score_display = document.getElementById("score-display");
 var shuffledQuestions, QuestionIndex, score;
-var click = false;
 var i = 0;
-var txt = "QUIZ APP"+" ✔";
-var speed = 100;
+var txt = "LOGIQUIZ ✔";
+var speed = 28;
 
 window.onload = () => {
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   QuestionIndex = 0;
   score = 0;
+  score_display.innerHTML = "SCORE: " + score + "/6";
   showQuestion(shuffledQuestions[QuestionIndex]);
   heading_animation();
 };
@@ -34,24 +35,46 @@ function showQuestion(q) {
       buttonElement.dataset.correct = answer.correct;
     }
     buttonElement.addEventListener("click", checkAnswer);
-    click = true;
   });
+}
+
+function showCorrect(selectedButton) {
+  for (let button of answer_container.childNodes) {
+    if (button.dataset.correct) {
+      button.classList.add("correct_option");
+    }
+  }
 }
 
 const checkAnswer = (e) => {
   const selectedButton = e.target;
+  console.log(answer_container);
+
   if (selectedButton.dataset.correct) {
     score += 1;
-  }
-  if (shuffledQuestions.length > QuestionIndex + 1) {
-    while (answer_container.firstChild) {
-      answer_container.removeChild(answer_container.firstChild);
-    }
-    QuestionIndex += 1;
-    showQuestion(shuffledQuestions[QuestionIndex]);
+    score_display.innerHTML = "SCORE: " + score + "/6";
+    selectedButton.classList.add("correct_option");
   } else {
-    alert("Quiz Over. Your score: " + score + "/6");
+    selectedButton.classList.add("incorrect_option");
+    showCorrect(selectedButton);
   }
+
+  setTimeout(() => {
+    if (shuffledQuestions.length > QuestionIndex + 1) {
+      while (answer_container.firstChild) {
+        answer_container.removeChild(answer_container.firstChild);
+      }
+      QuestionIndex += 1;
+      showQuestion(shuffledQuestions[QuestionIndex]);
+    } else {
+      alert(
+        "Quiz Over :)\nYour score: " +
+          score +
+          "/6.\nRefresh the page to start again."
+      );
+      window.location.reload();
+    }
+  }, 1000);
 };
 
 const questions = [
@@ -104,7 +127,7 @@ const questions = [
     answer: [
       {
         text: "TDJFOOD",
-        correct: true,
+        correct: false,
       },
       {
         text: "DTJFODF",
@@ -138,7 +161,7 @@ const questions = [
       },
       {
         text: "5678",
-        correct: true,
+        correct: false,
       },
     ],
   },
