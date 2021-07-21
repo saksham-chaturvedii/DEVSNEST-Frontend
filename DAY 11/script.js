@@ -68,9 +68,9 @@ const checkAnswer = (e) => {
       showQuestion(shuffledQuestions[QuestionIndex]);
     } else {
       alert(
-        "Quiz Over :)\nYour score: " +
+        "Quiz Over :)\nYour Score: " +
           score +
-          "/6.\nRefresh the page to start again."
+          "/6.\nClick 'OK' or press 'Enter' to play again 🙋🏽‍♂️."
       );
       window.location.reload();
     }
