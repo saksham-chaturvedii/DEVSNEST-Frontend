@@ -1,11 +1,13 @@
-import { TextField } from "@material-ui/core";
+import {  InputAdornment, TextField } from "@material-ui/core";
 
-export default function itemInput() {
+export default function CalorieInput() {
   return (
     <TextField
+      type="number"
       variant="outlined"
       helperText="Required *"
       placeholder="Calories"
+      InputProps={{ endAdornment: <InputAdornment>Kcal</InputAdornment> }}
     ></TextField>
   );
 }
