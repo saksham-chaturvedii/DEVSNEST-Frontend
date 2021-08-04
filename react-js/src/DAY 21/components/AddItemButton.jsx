@@ -1,7 +1,9 @@
 import { Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import { createTheme } from "@material-ui/core/styles";
-import { ThemeProvider } from "@material-ui/styles";
+import {
+  makeStyles,
+  createTheme,
+  ThemeProvider,
+} from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   AddItemStyles: {
@@ -25,6 +27,7 @@ export default function AddItemButton() {
     <div>
       <ThemeProvider theme={theme}>
         <Button
+          type="submit"
           variant="contained"
           color="primary"
           className={classes.AddItemStyles}
