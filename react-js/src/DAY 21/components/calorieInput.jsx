@@ -1,13 +1,25 @@
-import { InputAdornment, TextField } from "@material-ui/core";
+import { InputAdornment, TextField, Input } from "@material-ui/core";
+import { useContext } from "react";
+import Context from "./context";
 
 export default function CalorieInput() {
+  const { calorieInput, setCalorieInput } = useContext(Context);
+
   return (
-    <TextField
+    // <TextField
+    //   type="number"
+    //   variant="outlined"
+    //   helperText="Required *"
+    //   placeholder="Calories"
+    //   InputProps={{ endAdornment: <InputAdornment position="end">Kcal</InputAdornment> }}
+    // ></TextField>
+    <Input
+      placeholder="Calorie Name"
       type="number"
-      variant="outlined"
-      helperText="Required *"
-      placeholder="Calories"
-      InputProps={{ endAdornment: <InputAdornment position="end">Kcal</InputAdornment> }}
-    ></TextField>
+      value={calorieInput}
+      onChange={(e) => {
+        setCalorieInput(e.target.value);
+      }}
+    ></Input>
   );
 }

@@ -1,9 +1,11 @@
 import { Button } from "@material-ui/core";
+import Context from "./context";
 import {
   makeStyles,
   createTheme,
   ThemeProvider,
 } from "@material-ui/core/styles";
+import { useContext, useEffect } from "react";
 
 const useStyles = makeStyles({
   AddItemStyles: {
@@ -23,6 +25,28 @@ const theme = createTheme({
 
 export default function AddItemButton() {
   const classes = useStyles();
+  const {
+    foodInput,
+    calorieInput,
+    foodList,
+    setFoodList,
+    setCalorieInput,
+    setFoodInput,
+  } = useContext(Context);
+  const AddItem = (e) => {
+    if(!foodInput || !calorieInput)
+    {
+      alert("Inputs are mandatory");
+      return;
+    }
+    setFoodList([...foodList, {foodInput, calorieInput}]);
+    setFoodInput("");
+    setCalorieInput("");
+  };
+  useEffect(()=>{
+    console.log(foodList);
+  })
+
   return (
     <div>
       <ThemeProvider theme={theme}>
@@ -31,6 +55,7 @@ export default function AddItemButton() {
           variant="contained"
           color="primary"
           className={classes.AddItemStyles}
+          onClick={AddItem}
         >
           ADD ITEM
         </Button>
