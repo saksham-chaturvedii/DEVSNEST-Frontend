@@ -6,9 +6,16 @@ export function ContextFunc({ children }) {
   //A parent component that contains all the children components whose states we want to use in different files
   const [foodInput, setFoodInput] = useState(""); //item input
   const [calorieInput, setCalorieInput] = useState(""); //calorieinput
-  const [foodList, setFoodList] = useState([]); //fooditem
-  const [isEditing, setisEditing] = useState(false);
-  const [editItem, setEditItem] = useState("");
+  const [foodList, setFoodList] = useState([
+    {
+      foodInput: "Pizza",
+      calorieInput: "56",
+    },
+    {
+      foodInput: "Burger",
+      calorieInput: "69",
+    },
+  ]); //fooditem
 
   // console.log(foodInput, calorieInput);
   return (
@@ -20,10 +27,6 @@ export function ContextFunc({ children }) {
         setCalorieInput,
         foodList,
         setFoodList,
-        isEditing,
-        setisEditing,
-        editItem,
-        setEditItem,
       }}
     >
       {children}

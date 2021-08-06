@@ -1,70 +1,40 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Context from "./context";
-import { Input } from "@material-ui/core";
-import ItemInput from "./itemInput";
-import CalorieInput from "./calorieInput";
+import { CalorieBox } from "./CalorieBox.jsx";
 
-// const deleteItem=(e)=>{
-//   return(
-//     console.log(e.target.foodInput)
-//   );
-// }
 export default function FoodItem() {
-  const {
-    foodList,
-    setFoodList,
-    isEditing,
-    setisEditing,
-    setFoodInput,
-    editItem,
-    setEditItem,
-  } = useContext(Context);
+  const { foodList, setFoodList } = useContext(Context);
 
   const handleDel = (index) => {
     const NewfoodList = foodList.filter((item) => item !== foodList[index]);
     setFoodList(NewfoodList);
   };
 
+  const handleEdit = (id, editItem, editItemCalorie) => {
+    const curr = foodList.map((item, index) => {
+      if (index === id) {
+        return {
+          foodInput: editItem,
+          calorieInput: editItemCalorie,
+        };
+      } else {
+        return item;
+      }
+    });
+    setFoodList(curr);
+  };
+
   return (
     <>
-      {foodList.map(({ foodInput, calorieInput }, index) => {
-        return (
-          <div key={index}>
-            {isEditing ? (
-              <>
-                <div className="ItemInput">
-                  <Input
-                    type="text"
-                    placeholder="Item Name"
-                    value={editItem}
-                    onChange={(e) => {
-                      setEditItem(e.target.value);
-                    }}
-                  ></Input>
-                </div>
-                <div className="CalorieInput">
-                  <CalorieInput></CalorieInput>
-                </div>
-              </>
-            ) : (
-              <>
-                <h3>{foodInput}</h3>
-                <div>Consumed Calories: {calorieInput}.</div>
-              </>
-            )}
-
-            <button
-              onClick={() => {
-                setisEditing(!isEditing);
-              }}
-            >
-              {isEditing ? "DONE" : "EDIT"}
-            </button>
-
-            <button onClick={()=>{handleDel(index)}}>DELETE</button>
-          </div>
-        );
-      })}
+      {foodList.map((item, index) => (
+        <CalorieBox
+          key={index}
+          handleDel={handleDel}
+          handleEdit={handleEdit}
+          index={index}
+          item={item}
+        />
+      ))}
     </>
   );
 }

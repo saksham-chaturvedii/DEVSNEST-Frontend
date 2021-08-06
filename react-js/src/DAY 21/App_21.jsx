@@ -3,7 +3,7 @@ import ItemInput from "./components/itemInput";
 import CalorieInput from "./components/calorieInput";
 import AddItemButton from "./components/AddItemButton";
 import { ContextFunc } from "./components/context";
-import FoodItem from "./components/FoodItem"
+import FoodItem from "./components/FoodItem";
 import "./style.css";
 
 const BuiltApp = () => {

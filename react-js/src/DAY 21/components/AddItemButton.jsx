@@ -34,18 +34,17 @@ export default function AddItemButton() {
     setFoodInput,
   } = useContext(Context);
   const AddItem = (e) => {
-    if(!foodInput || !calorieInput)
-    {
+    if (!foodInput || !calorieInput) {
       alert("Inputs are mandatory");
       return;
     }
-    setFoodList([...foodList, {foodInput, calorieInput}]);
+    setFoodList([...foodList, { foodInput, calorieInput }]);
     setFoodInput("");
     setCalorieInput("");
   };
-  useEffect(()=>{
-    console.log(foodList);
-  })
+  // useEffect(()=>{
+  //   console.log(foodList);
+  // })
 
   return (
     <div>
