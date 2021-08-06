@@ -14,7 +14,7 @@ export default function CalorieInput() {
     //   InputProps={{ endAdornment: <InputAdornment position="end">Kcal</InputAdornment> }}
     // ></TextField>
     <Input
-      placeholder="Calorie Name"
+      placeholder="Calories"
       type="number"
       value={calorieInput}
       onChange={(e) => {
