@@ -19,6 +19,12 @@ export default function FoodItem() {
     editItem,
     setEditItem,
   } = useContext(Context);
+
+  const handleDel = (index) => {
+    const NewfoodList = foodList.filter((item) => item !== foodList[index]);
+    setFoodList(NewfoodList);
+  };
+
   return (
     <>
       {foodList.map(({ foodInput, calorieInput }, index) => {
@@ -55,16 +61,7 @@ export default function FoodItem() {
               {isEditing ? "DONE" : "EDIT"}
             </button>
 
-            <button
-              onClick={() => {
-                const NewfoodList = foodList.filter(
-                  (item) => item.foodInput !== foodInput
-                );
-                setFoodList(NewfoodList);
-              }}
-            >
-              DELETE
-            </button>
+            <button onClick={()=>{handleDel(index)}}>DELETE</button>
           </div>
         );
       })}
