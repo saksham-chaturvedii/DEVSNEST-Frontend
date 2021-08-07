@@ -46,3 +46,10 @@ button {
   background-color: thistle;
   font-family: "Montserrat", sans-serif;
 }
+@media (min-width: 0px) and (max-width:1191px)
+{
+    .willSmith
+    {
+      display: none;
+    }
+}
