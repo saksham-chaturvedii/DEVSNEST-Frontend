@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 body {
   height: 100vh;
@@ -18,11 +19,52 @@ body {
 
 .ItemInput,
 .CalorieInput {
-  margin: 3rem 0rem;
+  margin: 2rem 0rem;
   display: inline-block;
   padding: 0rem 2rem;
 }
+
+.mainInputBox {
+  display: flex;
+  justify-content: center;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.19em;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid black;
+}
+
+.FoodItem {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  line-height: 2rem;
+  width: 100%;
+}
+
+.foodTitle,
+.calorietitle {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.CalorieBox {
+  margin: 1rem 0rem;
+  padding: 1rem;
+  width: 35%;
+  border: 1px solid black;
+  border-radius: 0.35rem;
+}
+
+.EditCalorieBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ButtonPosition {
+  display: flex;
+  justify-content: flex-end;
 }

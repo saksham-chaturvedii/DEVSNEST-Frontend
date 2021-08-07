@@ -10,9 +10,9 @@ const BuiltApp = () => {
   return (
     <>
       <div className="MainContainerBox">
-        <h2>CRUD CALORIE TRACKER USING REACT JS & MATERIAL UI</h2>
+        <h2> CRUD CALORIE TRACKER USING REACT JS & MATERIAL UI</h2>
         <ContextFunc>
-          <div>
+          <div className="mainInputBox">
             <div className="ItemInput">
               <ItemInput></ItemInput>
             </div>
@@ -23,7 +23,7 @@ const BuiltApp = () => {
           <div className="AddItem">
             <AddItemButton></AddItemButton>
           </div>
-          <div>
+          <div className="FoodItem">
             <FoodItem></FoodItem>
           </div>
         </ContextFunc>

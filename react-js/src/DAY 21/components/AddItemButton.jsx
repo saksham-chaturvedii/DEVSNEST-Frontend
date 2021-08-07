@@ -9,17 +9,13 @@ import { useContext, useEffect } from "react";
 
 const useStyles = makeStyles({
   AddItemStyles: {
+    display: "flex",
+    // justifyContent: "center",
+    alignSelf: "center",
     color: "white",
-    width: "40vw",
-  },
-});
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#2196f3",
-      contrastText: "#fff",
-    },
+    width: "35vw",
+    marginBottom: "2rem",
+    backgroundColor: "#2196f3 !important",
   },
 });
 
@@ -35,7 +31,7 @@ export default function AddItemButton() {
   } = useContext(Context);
   const AddItem = (e) => {
     if (!foodInput || !calorieInput) {
-      alert("Inputs are mandatory");
+      alert("Inputs are mandatory.");
       return;
     }
     setFoodList([...foodList, { foodInput, calorieInput }]);
@@ -48,17 +44,15 @@ export default function AddItemButton() {
 
   return (
     <div>
-      <ThemeProvider theme={theme}>
-        <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          className={classes.AddItemStyles}
-          onClick={AddItem}
-        >
-          ADD ITEM
-        </Button>
-      </ThemeProvider>
+      <Button
+        type="submit"
+        variant="contained"
+        color="primary"
+        className={classes.AddItemStyles}
+        onClick={AddItem}
+      >
+        ADD ITEM
+      </Button>
     </div>
   );
 }

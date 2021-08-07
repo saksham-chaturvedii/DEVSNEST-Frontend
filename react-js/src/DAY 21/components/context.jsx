@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-
 const Context = createContext({});
 
 export function ContextFunc({ children }) {
@@ -9,11 +8,11 @@ export function ContextFunc({ children }) {
   const [foodList, setFoodList] = useState([
     {
       foodInput: "Pizza",
-      calorieInput: "56",
+      calorieInput: "266",
     },
     {
       foodInput: "Burger",
-      calorieInput: "69",
+      calorieInput: "295",
     },
   ]); //fooditem
 
