@@ -8,13 +8,14 @@ const Meme = (props) => {
       <div className="renderedMeme">
         <img src={props.meme.url} alt="ClickedMeme" />
         <div>
-          {[...Array(props.meme.box_count)].map((index) => (
+          {[...Array(props.meme.box_count)].map((_, index) => (
             <Input
               className="renderedMemeInputBox"
-              placeholder="Input"
-              multiline="true"
+              placeholder={`Input ${index}`}
+              multiline={true} //Red Warning shown if written as multiline = "true" or 'true'
             ></Input>
           ))}
+          {/* If written map((index)) instead of map((_, index)), index value will be shown undefined. Becasue, we create an array(size=box_count) of value undefined i.e. empty array. console.log(_) === undefined*/}
         </div>
       </div>
       <Button variant="contained" color="primary">

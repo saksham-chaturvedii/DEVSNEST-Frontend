@@ -16,7 +16,9 @@ const App_22 = () => {
         console.log(data.data.memes);
       const memeTemplateJSON = data.data.memes; //meme template image obtained from the API .
       setTemplate(memeTemplateJSON);
-    })();
+    })
+    fetchTemplate();
+    // ();
   }, []);
 
   return (
