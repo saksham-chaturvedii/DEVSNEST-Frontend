@@ -5,7 +5,7 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-body{
+body {
   width: 100vw;
   height: 100vh;
 }
@@ -47,7 +47,10 @@ h1 {
   .meme_Template {
     width: 50%;
   }
+/* add one MQ for when creating a meme */
 }
+
+
 .MemeBox {
   display: flex;
   flex-direction: column;
@@ -62,10 +65,10 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 50%;
+  overflow: hidden;
   /* border: 1px solid black; */
   /* box shadow */
 }
-
 .renderedMeme img {
   width: 50%;
   margin: 2rem;
@@ -74,4 +77,7 @@ h1 {
 .renderedMemeInputBox {
   width: 80%;
   margin: 2rem;
+}
+.generate-btn {
+  margin-right: 1rem;
 }

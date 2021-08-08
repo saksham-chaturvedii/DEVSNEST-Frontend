@@ -10,13 +10,13 @@ const App_22 = () => {
   // for the chosen meme
 
   useEffect(() => {
-    const fetchTemplate = (async () => {
+    const fetchTemplate = async () => {
       const response = await fetch(" https://api.imgflip.com/get_memes");
       const data = await response.json();
-        console.log(data.data.memes);
+      //   console.log(data.data.memes);
       const memeTemplateJSON = data.data.memes; //meme template image obtained from the API .
       setTemplate(memeTemplateJSON);
-    })
+    };
     fetchTemplate();
     // ();
   }, []);
@@ -27,9 +27,10 @@ const App_22 = () => {
       {!meme ? (
         <MainPage templates={templates} setMeme={setMeme} />
       ) : (
-        <Meme meme={meme} templates={templates}/>
+        <Meme meme={meme} templates={templates} setMeme={setMeme} />
       )}
     </div>
   );
 };
 export default App_22;
+//share button for the meme image or copy image
