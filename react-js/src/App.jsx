@@ -4,7 +4,8 @@
 // import Day18ChessboardApp from "./DAY 18/App_18_Chess";
 // For Day 19, refer to index.js directly.    
 // import Day20CalorieApp from "./DAY 20/App_20";
-import Day21CalorieApp from "./DAY 21/App_21";
+// import Day21CalorieApp from "./DAY 21/App_21";
+import Day22 from "./DAY 22/App_22";
 
     const App = ()=>{
         return (
@@ -20,7 +21,8 @@ import Day21CalorieApp from "./DAY 21/App_21";
               </h2>
             </div> */}
             {/* <Day20CalorieApp/> */}
-            <Day21CalorieApp/>
+            {/* <Day21CalorieApp/> */}
+            <Day22/>
           </div>
         );
     }
