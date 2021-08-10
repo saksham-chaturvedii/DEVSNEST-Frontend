@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button, Input } from "@material-ui/core";
 
 const Meme = (props) => {
@@ -29,6 +29,7 @@ const Meme = (props) => {
 
   return (
     <div className="MemeBox">
+      Your input captions will automatically be loaded at the right positions. You can modify the captions and then copy the image.
       <div className="renderedMeme">
         <img src={props.meme.url} alt="ClickedMeme" />
         <div>
@@ -48,30 +49,19 @@ const Meme = (props) => {
           ))}
           {/* If written map((index)) instead of map((_, index)), index value will be shown undefined. Becasue, we create an array(size=box_count) of value undefined i.e. empty array. console.log(_) === undefined*/}
         </div>
-      </div>
-      <div>
-        <span className="generate-btn">
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={(e) => {
-              console.log(caption_image);
-            }}
-          >
-            Copy Generated Meme
-          </Button>
-        </span>
-        <span>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => {
-              props.setMeme(false);
-            }}
-          >
-            Choose Another Meme
-          </Button>
-        </span>
+        <div className="renderedMemeInputBox">
+          <div>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => {
+                props.setMeme(false);
+              }}
+            >
+              Choose Another Meme
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );

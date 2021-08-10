@@ -59,18 +59,19 @@ h1 {
   height: 95vh;
   max-height: 95vh;
   overflow: hidden;
+  padding-left: 10rem;
 }
 .renderedMeme {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 70%;
   overflow: hidden;
+  margin-top: 2rem;
   /* border: 1px solid black; */
   /* box shadow */
 }
 .renderedMeme img {
-  width: 50%;
+  width: 60%;
   margin: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.164);
 }
@@ -78,6 +79,5 @@ h1 {
   width: 80%;
   margin: 2rem;
 }
-.generate-btn {
-  margin-right: 1rem;
-}
+
+/* 31 and 36 */
