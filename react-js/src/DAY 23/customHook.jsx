@@ -10,6 +10,7 @@ function useCount(initialValue) {
   const input = {
     value: count,
     onClick: handleCounter,
+    className: "button",
   };
   return [count, input];
 }
