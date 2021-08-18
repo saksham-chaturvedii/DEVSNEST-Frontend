@@ -6,7 +6,8 @@
 // import Day20CalorieApp from "./DAY 20/App_20";
 // import Day21CalorieApp from "./DAY 21/App_21";
 // import Day22 from "./DAY 22/App_22";
-import Day23 from "./DAY 23/App_23";
+// import Day23 from "./DAY 23/App_23";
+import Day24 from "./DAY 24/App_24";
 const App = () => {
   return (
     <div>
@@ -23,7 +24,8 @@ const App = () => {
       {/* <Day20CalorieApp/> */}
       {/* <Day21CalorieApp/> */}
       {/* <Day22/> */}
-      <Day23 />
+      {/* <Day23 /> */}
+      <Day24 />
     </div>
   );
 };

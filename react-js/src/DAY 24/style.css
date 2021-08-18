@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: rgb(189, 130, 238);
+}
