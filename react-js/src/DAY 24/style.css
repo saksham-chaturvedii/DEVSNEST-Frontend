@@ -21,7 +21,7 @@ body {
   justify-content: space-evenly;
   /* margin: 15rem; */
   padding: 2rem;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
 }
 a {
   color: white;
@@ -35,7 +35,6 @@ a:hover {
 }
 
 .HeadingAndButtonContainer {
-  border: 2px solid rgb(154, 45, 255);
   display: flex;
   flex-direction: column;
   justify-content: center;
