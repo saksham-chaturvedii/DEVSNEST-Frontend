@@ -6,7 +6,7 @@ class App_19 extends Component {
     return (
       <div>
         <h3 className="heading">
-          Created simple counter buttons using "state" and class components in
+          Created counter buttons using "State" and "Class Components" in
           REACT-JS.
           <br />
           Used <span style={{ color: "blueviolet" }}>
@@ -14,8 +14,8 @@ class App_19 extends Component {
             "this.setState()"{" "}
           </span>{" "}
           and
-          <span style={{ color: "blueviolet" }}> "this.prevState()" </span>{" "}
-          methods to update the count values.
+          <span style={{ color: "blueviolet" }}> "prevState" </span> to update
+          the count values.
         </h3>
 
         <div className="CounterButton">
