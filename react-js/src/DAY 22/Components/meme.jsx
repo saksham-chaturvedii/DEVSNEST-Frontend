@@ -16,7 +16,7 @@ const Meme = (props) => {
     //“?” in URL acts as separator, it indicates end of URL resource path and start of query parameters. When this form is used, the combined URI stands for the object which results from the query being applied to the original object.
     caption_image.boxes.map((box, index) => {
       custom_url += `&boxes[${index}][text]=${box.text}`;
-      console.log(` boxes[${index}][text]=${box.text}`);
+      // console.log(` boxes[${index}][text]=${box.text}`);
     });
     // console.log(url);
     fetch(custom_url)
