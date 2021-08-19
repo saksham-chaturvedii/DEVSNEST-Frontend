@@ -11,7 +11,7 @@ const App_22 = () => {
 
   useEffect(() => {
     const fetchTemplate = async () => {
-      const response = await fetch(" https://api.imgflip.com/get_memes");
+      const response = await fetch("https://api.imgflip.com/get_memes");
       const data = await response.json();
       //   console.log(data.data.memes);
       const memeTemplateJSON = data.data.memes; //meme template image obtained from the API .
