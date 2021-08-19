@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { Route, Redirect } from "react-router-dom";
+import AuthData from "./auth-context";
 
 function Dashboard() {
-    return (
-        <div>
-            Private Route
-        </div>
-    )
+  const { login } = useContext(AuthData);
+  return (
+    <div>
+      {login ? (
+        <div>You are logged in (Profile- Private Route).</div>
+      ) : (
+        <Route>
+          <Redirect to="/" />
+        </Route>
+      )}
+    </div>
+  );
 }
 
-export default Dashboard
+export default Dashboard;
+//Notice the difference in the line position of the <Route> tag here and in Profile.jsx. Both ways its working fine.
