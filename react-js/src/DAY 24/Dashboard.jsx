@@ -7,7 +7,7 @@ function Dashboard() {
   return (
     <div>
       {login ? (
-        <div>You are logged in (Profile- Private Route).</div>
+        <div>You are logged in (Dashboard- Private Route).</div>
       ) : (
         <Route>
           <Redirect to="/" />
