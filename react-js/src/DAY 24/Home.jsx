@@ -23,15 +23,22 @@ function Home() {
   };
 
   return (
-    <div>
-      <div>Login to access "Profile" & "Dashboard"</div>
+    <div className="HeadingAndButtonContainer">
+      <div className="PageText">
+        {login
+          ? "You have been logged in."
+          : "Login to access 'Profile' & 'Dashboard'"}
+      </div>
       {/* <Button onClick={handleLogin}>
         {loading ? "Loading..." : login ? "Logout" : "Login"}
       </Button> */}
       {loading ? (
         "Loading..."
       ) : (
-        <Button onClick={handleLogin}> {login ? "Logout" : "Login"}</Button>
+        <Button variant="outlined" color="secondary" onClick={handleLogin}>
+          {" "}
+          {login ? "Logout" : "Login"}
+        </Button>
       )}
     </div>
   );

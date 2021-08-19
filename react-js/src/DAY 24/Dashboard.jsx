@@ -5,9 +5,11 @@ import AuthData from "./auth-context";
 function Dashboard() {
   const { login } = useContext(AuthData);
   return (
-    <div>
+    <div className="HeadingAndButtonContainer">
       {login ? (
-        <div>You are logged in (Dashboard- Private Route).</div>
+        <div className="PageText">
+          You are logged in (Dashboard- Private Route).
+        </div>
       ) : (
         <Route>
           <Redirect to="/" />

@@ -1,12 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+}
 
 .NavBar {
   display: flex;
   justify-content: space-evenly;
+  /* margin: 15rem; */
   padding: 2rem;
-  background-color: rgb(189, 130, 238);
+  border: 2px solid white;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+a:hover {
+  color: rgb(154, 45, 255);
+  transition: all 0.1s ease-in;
+  transform: scale(1.1);
+}
+
+.HeadingAndButtonContainer {
+  border: 2px solid rgb(154, 45, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+}
+
+.PageText {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+  padding: 0rem 5rem;
 }

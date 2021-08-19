@@ -3,8 +3,7 @@
 .withoutCustomHook {
   width: 35rem;
 }
-.withCustomHook
-{
+.withCustomHook {
   width: 65rem;
 }
 
@@ -13,7 +12,7 @@ body {
   background-color: black;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
-  scroll-behavior:smooth ;
+  scroll-behavior: smooth;
 }
 
 .button {
@@ -30,7 +29,6 @@ body {
   float: right;
   top: 40%;
   right: 17%;
-  
 }
 h3 {
   color: white;
@@ -38,7 +36,6 @@ h3 {
   margin: 2rem 0rem 0.5rem 0rem;
 }
 
-.highlight{
+.highlight {
   color: rgb(154, 45, 255);
 }
-
