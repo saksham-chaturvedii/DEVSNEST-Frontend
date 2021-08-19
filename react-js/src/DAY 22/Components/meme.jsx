@@ -12,24 +12,25 @@ const Meme = (props) => {
     boxes: [],
   }); //image_caption is used to display the caption at the correct position (https://imgflip.com/api)
   const CaptionOnMemeTest = () => {
-    var custom_url = `https://api.imgflip.com/caption_image?template_id=${caption_image.template_id}&username=${caption_image.username}&password=${caption_image.password}`;
+    let custom_url = `https://api.imgflip.com/caption_image?template_id=${caption_image.template_id}&username=${caption_image.username}&password=${caption_image.password}`;
     //“?” in URL acts as separator, it indicates end of URL resource path and start of query parameters. When this form is used, the combined URI stands for the object which results from the query being applied to the original object.
     caption_image.boxes.map((box, index) => {
       custom_url += `&boxes[${index}][text]=${box.text}`;
-      // console.log(` boxes[${index}][text]=${data_boxes.text}`);
+      console.log(` boxes[${index}][text]=${box.text}`);
     });
     // console.log(url);
     fetch(custom_url)
       .then((response) => response.json())
       .then((data) =>
         // {console.log(data)}
-        props.setMeme({ ...props.meme, custom_url: data.data.url })
+        props.setMeme({ ...props.meme, url: data.data.url })
       );
   };
 
   return (
     <div className="MemeBox">
-      Your input captions will automatically be loaded at the right positions. You can modify the captions and then copy the image.
+      Your input captions will automatically be loaded at the right positions.
+      You can modify the captions and then copy the image.
       <div className="renderedMeme">
         <img src={props.meme.url} alt="ClickedMeme" />
         <div>
