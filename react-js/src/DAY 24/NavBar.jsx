@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom"; // use hashrouter to avoid the "cannot GET /about" error on reloading after build.
 import Home from "./Home";
 import About from "./About";
 import Profile from "./Profile";
