@@ -14,8 +14,18 @@ const Meme = (props) => {
   const CaptionOnMemeTest = () => {
     let url = `https://api.imgflip.com/caption_image?template_id=${caption_image.template_id}&username=${caption_image.username}&password=${caption_image.password}`;
     //“?” in URL acts as separator, it indicates end of URL resource path and start of query parameters. When this form is used, the combined URI stands for the object which results from the query being applied to the original object.
+    // var arr = [1, 2, 3, 4];
+    // console.log(arr);
+    // console.log(
+    //   arr.map((...e) => {
+    //     console.log(e);
+    //   })
+    //   );
+    //   console.log(arr); to understand the map warning.
+
     caption_image.boxes.map((box, index) => {
-      url += `&boxes[${index}][text]=${box.text}`;
+      return (url += `&boxes[${index}][text]=${box.text}`);
+      // writing return doesnt make any sense here because we are not changing anything within caption_image.boxes
       // console.log(` boxes[${index}][text]=${box.text}`);
     });
     // console.log(url);
