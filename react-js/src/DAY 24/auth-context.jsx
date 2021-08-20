@@ -3,7 +3,7 @@ const AuthData = createContext();
 
 export function ContextFunction({ children }) {
   const [login, setLogin] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(undefined);
   return (
     <AuthData.Provider value={{ login, setLogin, loading, setLoading }}>
       {children}
