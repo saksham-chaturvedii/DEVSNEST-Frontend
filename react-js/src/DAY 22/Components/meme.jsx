@@ -31,10 +31,12 @@ const Meme = (props) => {
     // console.log(url);
     fetch(url)
       .then((response) => response.json())
-      .then((data) =>
-        // {console.log(data)}
-        props.setMeme({ ...props.meme, url: data.data.url })
-      );
+      .then((data) => {
+        console.log(data);
+        const url2 = data && data.data && data.data.url; // Null checking, part of every version if data is false toh aagey dekhega hi nahi.
+        // props.setMeme({ ...props.meme, url: data?.data?.url || "" }); //data?. null checking- ES7
+        props.setMeme({ ...props.meme, url: url2  });
+      });
   };
 
   return (

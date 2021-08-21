@@ -4,9 +4,6 @@ import AuthData from "./auth-context";
 
 function Home() {
   const { login, setLogin, loading, setLoading } = useContext(AuthData); //'var' if using the loading=!loading method.
-  // console.log(setLoading);
-  // console.log(loading);
-  // const date = new Date();
 
   const wait = (time) => {
     return new Promise((resolve) => {
@@ -16,15 +13,14 @@ function Home() {
 
   const handleLogin = () => {
     // login ? setLogin(false) : setLogin(true);
-    setLoading(true);
-    // console.log(date);
-    // setLoading(!loading) was not working because of how lifecycle of variables work in React JS. Check log(date) to understand how the home omponent is getting rendered everytime a button click happens.
-    // loading=!loading;
-    // setLoading(loading);
+    // setLoading(true);
+    // setLoading(!loading);
+    // setLoading(window.loading); //callback queue, event loop, loupe
+    setLoading((loading) => !loading);
     wait(500).then(() => {
-      setLoading(false);
-      // loading=!loading;
-      // setLoading(loading);
+      // setLoading(false);
+      // setLoading(!loading);
+      setLoading((loading) => !loading);
       setLogin(!login);
     });
   };
