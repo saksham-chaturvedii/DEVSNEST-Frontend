@@ -6,7 +6,7 @@ const tasks = () => {
       <p>1. Build a container.</p>
       <p>2. Create a seperate function and use it as a component.</p>
       <p>3. Pass props "calorie and food" and call it to main component.</p>
-      <p>4. Create a delete button for every food item.</p>
+      <p>4. Using Hooks and create a delete functionality for every food item.</p>
     </div>
   );
 };
