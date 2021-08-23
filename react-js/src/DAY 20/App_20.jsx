@@ -18,13 +18,20 @@ const App = (props) => {
       <Task />
       <h2>CALORIE LIST</h2>
       <div className="food_container">
-        { 
-            foodList.length !== 0 ? 
-            (
-              foodList.map((item, index) => (
-              <CalorieList key={index} food={item.food} calories={item.calories} setState={setFoodList} calorie_arr2={foodList} key2={item.id}/>))
-            ) : <h2 style={{textAlign:"center"}}> List Empty </h2>
-        }
+        {foodList.length !== 0 ? (
+          foodList.map((item, index) => (
+            <CalorieList
+              key={index}
+              food={item.food}
+              calories={item.calories}
+              setState={setFoodList}
+              calorie_arr2={foodList}
+              key2={item.id}
+            />
+          ))
+        ) : (
+          <h2 style={{ textAlign: "center" }}> List Empty </h2>
+        )}
       </div>
     </div>
   );
