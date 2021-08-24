@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavBar from "./NavBar";
 import { Card, Button, Alert } from "react-bootstrap";
 
 function App_25() {
@@ -12,26 +13,26 @@ function App_25() {
     <div>
       <div> Implementing "Card", "Button" & "Alert" from Bootstrap</div>
       {alert ? (
-        [
-          "primary",
-          "secondary",
-          "success",
-          "danger",
-          "warning",
-          "info",
-          "light",
-          "dark",
-        ].map((variant, idx) => (
-          <Alert key={idx} variant={variant}>
-            This is a {variant} alert—check it out!
-            <div>
-              {/* make it a single btn */}
-              <Button variant="primary" onClick={showAlert}>
-                "Revert"
-              </Button>
-            </div>
-          </Alert>
-        ))
+        <>
+          <Button variant="primary" onClick={showAlert}>
+            "Revert"
+          </Button>
+
+          {[
+            "primary",
+            "secondary",
+            "success",
+            "danger",
+            "warning",
+            "info",
+            "light",
+            "dark",
+          ].map((variant, idx) => (
+            <Alert key={idx} variant={variant}>
+              This is a {variant} alert—check it out!
+            </Alert>
+          ))}
+        </>
       ) : (
         <Card style={{ width: "18rem" }}>
           <Card.Body>
@@ -46,8 +47,9 @@ function App_25() {
           </Card.Body>
         </Card>
       )}
+      {/* <NavBar /> */}
     </div>
   );
 }
-
+//use tailwind in some older THA
 export default App_25;
