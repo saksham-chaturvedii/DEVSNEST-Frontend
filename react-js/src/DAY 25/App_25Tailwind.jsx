@@ -14,13 +14,27 @@ function App_25Tailwind() {
           alt=""
         />
         <div class="flex justify-evenly w-49.194375 text-xl py-2 ml-5 text-nav-color">
-          <button class="p-2 font-semibold cursor-pointer">Vision</button>
-          <button class="p-2 font-semibold cursor-pointer">Curriculum</button>
-          <button class="p-2 font-semibold cursor-pointer">Pricing</button>
-          <button class="p-2 font-semibold cursor-pointer">About</button>
-          <button class="p-2 font-semibold cursor-pointer">Join Now</button>
-          <button class="p-2 font-semibold cursor-pointer">FAQs</button>
-          <button class="p-2 font-semibold cursor-pointer">Login</button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            Vision
+          </button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            Curriculum
+          </button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            Pricing
+          </button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            About
+          </button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            Join Now
+          </button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            FAQs
+          </button>
+          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+            Login
+          </button>
         </div>
       </nav>
       <div class="flex">
