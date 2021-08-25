@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import NavBar from "./NavBar";
 import { Card, Button, Alert } from "react-bootstrap";
 
 function App_25() {
@@ -47,9 +46,7 @@ function App_25() {
           </Card.Body>
         </Card>
       )}
-      {/* <NavBar /> */}
     </div>
   );
 }
-//use tailwind in some older THA
 export default App_25;

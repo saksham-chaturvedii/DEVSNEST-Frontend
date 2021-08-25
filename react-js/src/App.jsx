@@ -8,7 +8,8 @@
 // import Day22 from "./DAY 22/App_22";
 // import Day23 from "./DAY 23/App_23";
 // import Day24 from "./DAY 24/App_24";
-import Day25 from "./DAY 25/App_25";
+// import Day25 from "./DAY 25/App_25";
+import Day25Tailwind from "./DAY 25/App_25Tailwind";
 
 const App = () => {
   return (
@@ -28,7 +29,8 @@ const App = () => {
       {/* <Day22/> */}
       {/* <Day23 /> */}
       {/* <Day24 /> */}
-      <Day25 />
+      {/* <Day25 /> */}
+      <Day25Tailwind />
     </div>
   );
 };
