@@ -24,7 +24,7 @@ body {
   font-size: 2rem;
   border-radius: 4%;
   border: 0px;
-  cursor: sticky;
+  cursor: pointer;
   position: fixed;
   float: right;
   top: 35%;
