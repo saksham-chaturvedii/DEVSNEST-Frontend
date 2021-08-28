@@ -24,11 +24,11 @@ body {
   font-size: 2rem;
   border-radius: 4%;
   border: 0px;
-  cursor: pointer;
+  cursor: sticky;
   position: fixed;
   float: right;
-  top: 40%;
-  right: 17%;
+  top: 35%;
+  right: 48%;
 }
 h3 {
   color: white;
@@ -38,4 +38,15 @@ h3 {
 
 .highlight {
   color: rgb(154, 45, 255);
+}
+@media all and (max-width: 840px) {
+  .button {
+    position: relative;
+    top: 0%;
+    right: 0%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

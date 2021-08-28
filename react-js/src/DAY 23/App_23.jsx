@@ -10,7 +10,7 @@ export default function App_23() {
   return (
     <div>
       <div>
-        <div>
+        <div className="wrapper">
           <h3>
             This project is creatd to practice{" "}
             <span className="highlight">Custom Hooks</span> in React JS. <br />{" "}
@@ -18,8 +18,8 @@ export default function App_23() {
             is used to change the number of times a user has clicked the{" "}
             <span className="highlight"> counter button</span>.
           </h3>
+          <button {...input}> {count} </button>
         </div>
-        <button {...input}> {count} </button>
         <div>
           <h3>WITHOUT USING CUSTOM HOOKS</h3>
           <img
