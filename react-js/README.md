@@ -12,5 +12,6 @@
 [DAY 21](https://github.com/saksshham/DEVSNEST-Frontend/tree/main/react-js/src/DAY%2021)\
 [DAY 22](https://github.com/saksshham/DEVSNEST-Frontend/tree/main/react-js/src/DAY%2022)\
 [DAY 23](https://github.com/saksshham/DEVSNEST-Frontend/tree/main/react-js/src/DAY%2023)\
-[DAY 24](https://github.com/saksshham/DEVSNEST-Frontend/tree/main/react-js/src/DAY%2024)
+[DAY 24](https://github.com/saksshham/DEVSNEST-Frontend/tree/main/react-js/src/DAY%2024)\
+[DAY 25](https://github.com/saksshham/DEVSNEST-Frontend/tree/main/react-js/src/DAY%2025)
 
