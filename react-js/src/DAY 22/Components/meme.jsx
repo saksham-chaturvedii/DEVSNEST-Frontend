@@ -54,7 +54,7 @@ const Meme = (props) => {
   return (
     <div className="MemeBox">
       Your input captions will automatically be loaded at the right positions.
-      You can modify the captions and then copy the image.
+      You can modify the captions and then copy the created meme image.
       <div className="renderedMeme">
         <img src={props.meme.url} alt="ClickedMeme" />
         <div>
@@ -76,8 +76,8 @@ const Meme = (props) => {
         <div className="renderedMemeInputBox">
           <div>
             <Button
-              variant="contained"
-              color="primary"
+              variant="outlined"
+              color="secondary"
               onClick={() => {
                 props.setMeme(false);
               }}
