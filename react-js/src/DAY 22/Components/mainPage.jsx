@@ -8,7 +8,7 @@ export default function MemeGenerator_gallery(props) {
       <div className="memeGenerator_gallery">
         {templates.map((template) => (
           <div key={template.id} className="meme_Template">
-            <img src={template.url} alt="MemeImg" />
+            <img loading="lazy" src={template.url} alt="MemeImg" />
             <Button
               variant="outlined"
               color="primary"
