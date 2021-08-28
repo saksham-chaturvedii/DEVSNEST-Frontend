@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,13 +9,17 @@
 body {
   width: 100vw;
   height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 .memeGenerator_gallery {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   padding: 1rem;
+}
+h1 {
+  margin-top: 2rem;
 }
 .meme_Template {
   display: flex;
@@ -47,9 +52,8 @@ h1 {
   .meme_Template {
     width: 50%;
   }
-/* add one MQ for when creating a meme */
+  /* add one MQ for when creating a meme */
 }
-
 
 .MemeBox {
   display: flex;
