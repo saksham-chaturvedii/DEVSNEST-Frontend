@@ -2,6 +2,12 @@
 
 This repository contains FrontEnd Web Development 🎨 projects; currently, they are related to learnings from the Devsnest FrontEnd Course.
 
+Topics Covered:
+1. HTML
+2. CSS
+3. JavaScript
+4. React JS
+
 ---
 
 The projects are maintained in a "**Day-Wise**" manner, according to the Take-Home-Assignments given post each session. Hence, the level of the projects would be ascending i.e. Beginner to Advanced Level.\
