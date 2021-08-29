@@ -3,6 +3,7 @@
 This repository contains FrontEnd Web Development 🎨 projects; currently, they are related to learnings from the Devsnest FrontEnd Course.
 
 Topics Covered:
+
 1. HTML
 2. CSS
 3. JavaScript
