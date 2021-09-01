@@ -30,8 +30,10 @@ const Meme = (props) => {
     //   console.log(arr); to understand the map warning.
 
     caption_image.boxes.map((box, index) => {
-      const text = box.text === "" ? "%20" : box.text;
-      return (url += `&boxes[${index}][text]=${text}`);
+      if (box && box.text){
+        const text = box.text === "" ? "%20" : box.text;
+        return (url += `&boxes[${index}][text]=${text}`);
+      }
       // writing return doesnt make any sense here because we are not changing anything within caption_image.boxes
       // console.log(` boxes[${index}][text]=${box.text}`);
     });
@@ -56,7 +58,7 @@ const Meme = (props) => {
       Your input captions will automatically be loaded at the right positions.
       You can modify the captions and then copy the created meme image.
       <div className="renderedMeme">
-        <img src={props.meme.url} alt="ClickedMeme" />
+        <img loading="lazy" src={props.meme.url} alt="ClickedMeme" />
         <div>
           {[...Array(props.meme.box_count)].map((_, index) => (
             <Input
@@ -65,9 +67,14 @@ const Meme = (props) => {
               placeholder={`Caption ${index + 1}`}
               multiline={true} //Red Warning shown if written as multiline = "true" or 'true'
               onChange={(e) => {
-                const data_boxes = caption_image.boxes;
+                // console.log(caption_image.boxes);
+                e.preventDefault();
+                const data_boxes = [...caption_image.boxes];
                 data_boxes[index] = { text: e.target.value };
-                setCaption_image({ ...caption_image, boxes: data_boxes });
+                setCaption_image({
+                  ...caption_image,
+                  boxes: data_boxes,
+                });
               }}
             ></Input>
           ))}
