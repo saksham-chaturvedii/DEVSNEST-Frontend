@@ -14,25 +14,53 @@ function App_25Tailwind() {
           alt=""
         />
         <div class="flex justify-evenly w-49.194375 text-xl py-2 ml-5 text-nav-color">
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400 tracking-wide
+
+"
+          >
             Vision
           </button>
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400 tracking-wide
+
+"
+          >
             Curriculum
           </button>
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400 tracking-wide
+
+"
+          >
             Pricing
           </button>
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400 tracking-wide
+
+"
+          >
             About
           </button>
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400 tracking-wide
+
+"
+          >
             Join Now
           </button>
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400tracking-wide
+
+"
+          >
             FAQs
           </button>
-          <button class="p-2 font-semibold cursor-pointer hover:text-red-400">
+          <button
+            class="p-2 font-semibold cursor-pointer hover:text-red-400 tracking-wide
+
+"
+          >
             Login
           </button>
         </div>
@@ -49,7 +77,7 @@ function App_25Tailwind() {
               Education which makes you financially{" "}
               <span class="text-independent">independent.</span>
             </p>
-            <p class="text-xl	pr-44 font-semibold leading-7">
+            <p class="text-xl	pr-44 font-semibold leading-6">
               A mentorship program designed to help you get your dream job. It
               evolves as per your needs to mould you into a kickass developer.
             </p>
