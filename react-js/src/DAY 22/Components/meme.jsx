@@ -37,12 +37,12 @@ const Meme = (props) => {
       // writing return doesnt make any sense here because we are not changing anything within caption_image.boxes
       // console.log(` boxes[${index}][text]=${box.text}`);
     });
-    console.log("2", url);
+    // console.log("2", url);
 
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         const url2 = data && data.data && data.data.url; // Null checking, part of every version if data is false toh aagey dekhega hi nahi.
         // props.setMeme({ ...props.meme, url: data?.data?.url || "" }); //data?. null checking- ES7
         props.setMeme({ ...props.meme, url: url2 });
@@ -68,7 +68,7 @@ const Meme = (props) => {
               multiline={true} //Red Warning shown if written as multiline = "true" or 'true'
               onChange={(e) => {
                 // console.log(caption_image.boxes);
-                e.preventDefault();
+                // e.preventDefault();
                 const data_boxes = [...caption_image.boxes];
                 data_boxes[index] = { text: e.target.value };
                 setCaption_image({

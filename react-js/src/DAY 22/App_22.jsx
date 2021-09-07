@@ -9,14 +9,15 @@ const App_22 = () => {
   const [meme, setMeme] = useState(false);
   // for the chosen meme
 
+  const fetchTemplate = async () => {
+    const response = await fetch("https://api.imgflip.com/get_memes");
+    const data = await response.json();
+    // console.log(data.data);
+    // console.log(data.data.memes);
+    const memeTemplateJSON = data.data.memes; //meme template image obtained from the API .
+    setTemplate(memeTemplateJSON);
+  };
   useEffect(() => {
-    const fetchTemplate = async () => {
-      const response = await fetch("https://api.imgflip.com/get_memes");
-      const data = await response.json();
-      //   console.log(data.data.memes);
-      const memeTemplateJSON = data.data.memes; //meme template image obtained from the API .
-      setTemplate(memeTemplateJSON);
-    };
     fetchTemplate();
     // ();
   }, []);
